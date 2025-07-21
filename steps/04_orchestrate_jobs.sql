@@ -98,7 +98,7 @@ create or alter task email_notification
 
 -- resume follow-up task so it is included in DAG runs
 -- don't resume the root task so the regular schedule doesn't get invoked
-alter task email_notification resume;
+--alter task email_notification resume;
 
 
 -- manually initiate a full execution of the DAG
