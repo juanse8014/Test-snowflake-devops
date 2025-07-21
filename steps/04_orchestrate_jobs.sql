@@ -70,7 +70,7 @@ create or alter task email_notification
       if (:options = '[]') then
         CALL SYSTEM$SEND_EMAIL(
             'email_integration',
-            '<insert your email here>', -- INSERT YOUR EMAIL HERE
+            'sebastian.navarrete@all4analytics.com', -- INSERT YOUR EMAIL HERE
             'New data successfully processed: No suitable vacation spots found.',
             'The query did not return any results. Consider adjusting your filters.');
       end if;
