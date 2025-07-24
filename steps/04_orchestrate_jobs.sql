@@ -18,7 +18,7 @@ create or alter table vacation_spots (
 
 -- task to merge pipeline results into target table
 create or alter task vacation_spots_update
-  schedule = '1440 minute'
+  schedule = '60 minute'
   warehouse = 'quickstart_wh'
   ERROR_ON_NONDETERMINISTIC_MERGE = false
   AS MERGE INTO vacation_spots USING (
